@@ -1,10 +1,10 @@
 {
   "author": "Joe Layman",
-  "name": "chat_app",
-  "description": "chat app",
-  "version": "0.0.0",
+  "name": "node-template",
+  "description": "node-template",
+  "version": "0.0.1",
   "repository": {
-    "url": ""
+    "url": "https://github.com/josephlayman/node-template"
   },
   "engines": {
     "node": "~0.10.10"
