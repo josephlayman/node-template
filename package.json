@@ -1,0 +1,18 @@
+{
+  "author": "Joe Layman",
+  "name": "chat_app",
+  "description": "chat app",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.10.10"
+  },
+  "dependencies": {
+    "express": "~3.4.0",
+    "ejs": "~0.8.4",
+    "express-ejs-layouts": "~0.3.1"
+  },
+  "devDependencies": {}
+}
