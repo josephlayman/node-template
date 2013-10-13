@@ -2,6 +2,7 @@ var
 	express 		= require('express');
 	app 			= express(),
 
+    routes          = require('./routes').routes,
 	expressLayouts 	= require('express-ejs-layouts'),
 	stylus 			= require('stylus')
 ;
@@ -18,18 +19,15 @@ app.configure(function () {
     app.use(expressLayouts);
 
     app.use(stylus.middleware({
-  		src: __dirname + '/public',
-        dest: __dirname + '/public'
+  		    src: __dirname + '/public',
+            dest: __dirname + '/public'
   	}));
 
+    app.use(app.router);
   	app.use(express.static(__dirname + '/public'));
 
 });
 
-app.get('/', function(req, res){
-
-	res.render('index');
-
-});
+routes.load(app);
 
 app.listen(3000);
